@@ -46,24 +46,39 @@ console.log('Sistema listo ✓');`;
       this.submitError = false;
 
       try {
-        // Configuración de EmailJS (el usuario deberá configurar sus propias credenciales)
         const templateParams = {
           from_name: this.contactForm.value.name,
           from_email: this.contactForm.value.email,
           phone: this.contactForm.value.phone,
-          company: this.contactForm.value.company,
+          company: this.contactForm.value.company || 'No especificado',
           service: this.contactForm.value.service,
-          message: this.contactForm.value.message
+          message: this.contactForm.value.message,
+          to_email: 'j.d.guior010602@gmail.com'
         };
 
-        // Nota: Reemplazar con tus credenciales de EmailJS
-        // await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_PUBLIC_KEY');
+        // ⚠️ IMPORTANTE: Reemplaza estos valores con tus credenciales de EmailJS
+        // 1. Ve a https://www.emailjs.com
+        // 2. Crea una cuenta con j.d.guior010602@gmail.com
+        // 3. Configura un servicio de Gmail
+        // 4. Crea un template
+        // 5. Reemplaza los valores abajo:
         
-        // Simulación de envío exitoso (remover cuando configures EmailJS)
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await emailjs.send(
+          'service_egbka5a',      // ⬅️ Reemplazar con tu SERVICE ID
+          'template_nrjw2bj',     // ⬅️ Reemplazar con tu TEMPLATE ID
+          templateParams,
+          'of3td4JM0ZMNktRzc'       // ⬅️ Reemplazar con tu PUBLIC KEY
+        );
+
+        // Si aún no has configurado EmailJS, comenta las líneas 52-57 y descomenta esta:
+        // await new Promise(resolve => setTimeout(resolve, 1000));
         
         this.submitSuccess = true;
         this.contactForm.reset();
+        
+        // Enviar también a WhatsApp (opcional)
+        // window.open(`https://wa.me/59169087992?text=Nuevo contacto: ${this.contactForm.value.name}`, '_blank');
+        
       } catch (error) {
         this.submitError = true;
         console.error('Error al enviar:', error);
