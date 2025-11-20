@@ -1,0 +1,305 @@
+<header class="bg-white shadow-sm fixed w-full top-0 z-50">
+  <nav class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM7 9.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm7 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+        </svg>
+        <span class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">TwinDev</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a (click)="scrollTo('inicio')" class="text-gray-700 hover:text-purple-600 font-medium cursor-pointer">Inicio</a>
+        <a (click)="scrollTo('servicios')" class="text-gray-700 hover:text-purple-600 font-medium cursor-pointer">Servicios</a>
+        <a (click)="scrollTo('nosotros')" class="text-gray-700 hover:text-purple-600 font-medium cursor-pointer">Nosotros</a>
+        <a (click)="scrollTo('contacto')" class="text-gray-700 hover:text-purple-600 font-medium cursor-pointer">Contacto</a>
+      </div>
+      <button (click)="scrollTo('contacto')" class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition">
+        Cotizar
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section id="inicio" class="pt-32 pb-20 bg-gradient-to-br from-purple-50 to-blue-50">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+      <div class="lg:w-1/2">
+        <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          Desarrollo de Software
+          <span class="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">de Calidad</span>
+        </h1>
+        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+          Somos TwinDev, tu equipo de desarrollo en Santa Cruz, Bolivia. 
+          Creamos sistemas de gestión robustos con tecnologías modernas.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button (click)="scrollTo('servicios')" class="bg-purple-600 text-white px-8 py-4 rounded-lg hover:bg-purple-700 transition text-lg font-semibold">
+            Ver Servicios
+          </button>
+          <button (click)="scrollTo('contacto')" class="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-lg hover:bg-purple-50 transition text-lg font-semibold">
+            Contáctanos
+          </button>
+        </div>
+      </div>
+      <div class="lg:w-1/2">
+        <div class="bg-gray-900 rounded-2xl shadow-2xl p-8">
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+          </div>
+          <pre class="text-green-400 text-sm"><code>{{ codeSnippet }}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Stack Tecnológico</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="text-center p-6 border rounded-xl hover:shadow-lg transition">
+        <div class="text-4xl mb-3">⚛️</div>
+        <h3 class="font-bold">React</h3>
+        <p class="text-sm text-gray-600">v18+</p>
+      </div>
+      <div class="text-center p-6 border rounded-xl hover:shadow-lg transition">
+        <div class="text-4xl mb-3">🅰️</div>
+        <h3 class="font-bold">Angular</h3>
+        <p class="text-sm text-gray-600">v18+</p>
+      </div>
+      <div class="text-center p-6 border rounded-xl hover:shadow-lg transition">
+        <div class="text-4xl mb-3">🍃</div>
+        <h3 class="font-bold">Spring Boot</h3>
+        <p class="text-sm text-gray-600">Java</p>
+      </div>
+      <div class="text-center p-6 border rounded-xl hover:shadow-lg transition">
+        <div class="text-4xl mb-3">🦅</div>
+        <h3 class="font-bold">NestJS</h3>
+        <p class="text-sm text-gray-600">TypeScript</p>
+      </div>
+      <div class="text-center p-6 border rounded-xl hover:shadow-lg transition">
+        <div class="text-4xl mb-3">📦</div>
+        <h3 class="font-bold">Express</h3>
+        <p class="text-sm text-gray-600">Node.js</p>
+      </div>
+      <div class="text-center p-6 border rounded-xl hover:shadow-lg transition">
+        <div class="text-4xl mb-3">🐘</div>
+        <h3 class="font-bold">PostgreSQL</h3>
+        <p class="text-sm text-gray-600">Database</p>
+      </div>
+      <div class="text-center p-6 border rounded-xl hover:shadow-lg transition">
+        <div class="text-4xl mb-3">🍃</div>
+        <h3 class="font-bold">MongoDB</h3>
+        <p class="text-sm text-gray-600">NoSQL</p>
+      </div>
+      <div class="text-center p-6 border rounded-xl hover:shadow-lg transition">
+        <div class="text-4xl mb-3">🐳</div>
+        <h3 class="font-bold">Docker</h3>
+        <p class="text-sm text-gray-600">DevOps</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4">Nuestros Servicios</h2>
+    <p class="text-center text-gray-600 mb-12 text-lg">Soluciones personalizadas</p>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+        <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">Sistemas de Gestión</h3>
+        <p class="text-gray-600 mb-4">ERP, CRM, inventarios y más.</p>
+        <p class="text-purple-600 font-bold text-lg mb-4">Desde $2,000</p>
+        <ul class="space-y-2 text-sm text-gray-600">
+          <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Arquitectura escalable</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Base de datos robusta</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> 30 días garantía</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">Aplicaciones Web</h3>
+        <p class="text-gray-600 mb-4">SPAs, dashboards y portales.</p>
+        <p class="text-blue-600 font-bold text-lg mb-4">Desde $1,500</p>
+        <ul class="space-y-2 text-sm text-gray-600">
+          <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Diseño responsive</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> SEO optimizado</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Alta performance</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+        <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">APIs & Microservicios</h3>
+        <p class="text-gray-600 mb-4">APIs RESTful y arquitectura.</p>
+        <p class="text-green-600 font-bold text-lg mb-4">Desde $1,000</p>
+        <ul class="space-y-2 text-sm text-gray-600">
+          <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Doc Swagger</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Testing incluido</li>
+          <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Seguridad</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nosotros" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-4">Nuestro Equipo</h2>
+    <p class="text-center text-gray-600 mb-12 text-lg">Desarrolladores apasionados</p>
+    
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-xl text-center">
+        <div class="w-24 h-24 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">JD</div>
+        <h3 class="text-2xl font-bold mb-2">Juan Diego Guirapoigua</h3>
+        <p class="text-purple-600 font-semibold mb-4">Full Stack Developer</p>
+        <p class="text-gray-600">Frontend con Angular y React.</p>
+      </div>
+      
+      <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl text-center">
+        <div class="w-24 h-24 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">RE</div>
+        <h3 class="text-2xl font-bold mb-2">Rubén Espejo Apaza</h3>
+        <p class="text-blue-600 font-semibold mb-4">Full Stack Developer</p>
+        <p class="text-gray-600">Backend con Spring y NestJS.</p>
+      </div>
+    </div>
+
+    <div class="mt-16 text-center">
+      <h3 class="text-2xl font-bold mb-6">¿Por qué elegirnos?</h3>
+      <div class="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <div class="p-6">
+          <div class="text-4xl mb-3">⚡</div>
+          <h4 class="font-bold mb-2">Agilidad</h4>
+          <p class="text-gray-600 text-sm">Entregas rápidas</p>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl mb-3">🎯</div>
+          <h4 class="font-bold mb-2">Calidad</h4>
+          <p class="text-gray-600 text-sm">Código limpio</p>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl mb-3">💬</div>
+          <h4 class="font-bold mb-2">Transparencia</h4>
+          <p class="text-gray-600 text-sm">Comunicación directa</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="py-20 bg-gradient-to-br from-purple-600 to-blue-600 text-white">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-4">¿Tienes un proyecto?</h2>
+      <p class="text-xl text-center mb-12 opacity-90">Conversemos</p>
+      
+      <div class="bg-white rounded-2xl p-8 text-gray-900">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="block text-sm font-semibold mb-2">Nombre *</label>
+              <input type="text" formControlName="name" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-600">
+              <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="text-red-500 text-sm mt-1">Requerido</div>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Email *</label>
+              <input type="email" formControlName="email" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-600">
+              <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="text-red-500 text-sm mt-1">Email válido</div>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="block text-sm font-semibold mb-2">Teléfono *</label>
+              <input type="tel" formControlName="phone" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-600">
+              <div *ngIf="contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched" class="text-red-500 text-sm mt-1">Requerido</div>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-2">Empresa</label>
+              <input type="text" formControlName="company" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-600">
+            </div>
+          </div>
+
+          <div class="mb-6">
+            <label class="block text-sm font-semibold mb-2">Servicio *</label>
+            <select formControlName="service" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-600">
+              <option value="">Selecciona</option>
+              <option value="sistemas">Sistemas de Gestión</option>
+              <option value="apps">Aplicaciones Web</option>
+              <option value="apis">APIs</option>
+              <option value="consultoria">Consultoría</option>
+            </select>
+            <div *ngIf="contactForm.get('service')?.invalid && contactForm.get('service')?.touched" class="text-red-500 text-sm mt-1">Selecciona</div>
+          </div>
+
+          <div class="mb-6">
+            <label class="block text-sm font-semibold mb-2">Mensaje *</label>
+            <textarea formControlName="message" rows="4" class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-600"></textarea>
+            <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="text-red-500 text-sm mt-1">Requerido</div>
+          </div>
+
+          <button type="submit" [disabled]="contactForm.invalid || isSubmitting" class="w-full bg-purple-600 text-white px-8 py-4 rounded-lg hover:bg-purple-700 transition font-semibold disabled:opacity-50">
+            <span *ngIf="!isSubmitting">Enviar</span>
+            <span *ngIf="isSubmitting">Enviando...</span>
+          </button>
+
+          <div *ngIf="submitSuccess" class="mt-4 p-4 bg-green-100 text-green-700 rounded-lg">¡Enviado!</div>
+          <div *ngIf="submitError" class="mt-4 p-4 bg-red-100 text-red-700 rounded-lg">Error</div>
+        </form>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-3xl mb-2">📧</div>
+          <h4 class="font-bold mb-1">Email</h4>
+          <p class="opacity-90 text-sm">contacto&#64;twindev.bo</p>
+        </div>
+        <div>
+          <div class="text-3xl mb-2">📱</div>
+          <h4 class="font-bold mb-1">WhatsApp</h4>
+          <p class="opacity-90 text-sm">+591 XXXX</p>
+        </div>
+        <div>
+          <div class="text-3xl mb-2">📍</div>
+          <h4 class="font-bold mb-1">Ubicación</h4>
+          <p class="opacity-90 text-sm">Santa Cruz, Bolivia</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-gray-400 py-8">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center space-x-2 mb-4 md:mb-0">
+        <svg class="w-6 h-6 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 2a8 8 0 100 16 8 8 0 000-16zM7 9.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm7 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+        </svg>
+        <span class="text-lg font-bold text-white">TwinDev</span>
+      </div>
+      <p class="text-center mb-4 md:mb-0">© 2024 TwinDev</p>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-white">GitHub</a>
+        <a href="#" class="hover:text-white">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
