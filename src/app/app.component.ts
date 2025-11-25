@@ -94,4 +94,6 @@ console.log('Sistema listo ✓');`;
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+  currentYear = new Date().getFullYear();
 }
