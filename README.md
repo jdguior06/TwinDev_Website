@@ -1,27 +1,32 @@
-# TwindevWebsite
+# TwinDev — Sitio web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+Sitio web de presentación de **TwinDev**, una startup creada como ejercicio de clase para ofrecer servicios de desarrollo y recibir contactos de posibles clientes.
 
-## Development server
+> 🎓 Proyecto académico desarrollado en la U.A.G.R.M. (Ingeniería en Sistemas), 2025.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Qué incluye
 
-## Code scaffolding
+Una página con el stack tecnológico, los servicios que ofrece la startup, su equipo y una sección de contacto para nuevos proyectos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologías
 
-## Build
+Angular 18, Tailwind CSS, SCSS. Configurado para desplegarse en Netlify.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Cómo ejecutarlo
 
-## Running unit tests
+```bash
+npm install
+npm start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+La aplicación queda disponible en `http://localhost:4200`.
 
-## Running end-to-end tests
+Para generar la versión de producción:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm run build
+```
 
-## Further help
+## Autor
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Juan Diego Guirapoigua Oregua · [@jdguior06](https://github.com/jdguior06)
